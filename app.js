@@ -1,5 +1,8 @@
 const express = require('express');
+const helmet = require('helmet');
 const app = express();
+
+app.use(helmet());
 
 app.set('port', (process.env.PORT || 8080));
 app.use(express.static(__dirname + '/public'));
