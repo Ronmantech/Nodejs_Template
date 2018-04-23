@@ -19,7 +19,7 @@ npm install
 npm start
 ```
 
-The app will run on part 8080. [localhost:8080](http://localhost:8080/).
+The app will run on port 8080. [localhost:8080](http://localhost:8080/).
 
 ## Deploying to Heroku
 
@@ -33,9 +33,20 @@ Or you can deploy your own copy of the app using the web-based flow:
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-## Help
+## Help Desk 
 
 If "cant find modules" error is encountered. Please 
 ```
+npm install
+```
+
+If "Node Sass could not find a binding for your current environment" or "throw new Error(errors.missingBinary());" error is encountered. 
+```
+rm -rf node_modules
+npm install 
+```
+or 
+```
+npm rebuild node-sass
 npm install
 ```
