@@ -7,6 +7,10 @@
 * SCSS
 * CSS
 * Pug
+* Mocha
+* Chai
+* Heroku
+* Bash
 
 ## Running Locally
 
