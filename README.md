@@ -35,12 +35,12 @@ Or you can deploy your own copy of the app using the web-based flow:
 
 ## Help Desk 
 
-If "cant find modules" error is encountered. Please 
+If "cant find modules" error is encountered. Try the following: 
 ```
 npm install
 ```
 
-If "Node Sass could not find a binding for your current environment" or "throw new Error(errors.missingBinary());" error is encountered. 
+If "Node Sass could not find a binding for your current environment" or "throw new Error(errors.missingBinary());" error is encountered. Try either of the following:  
 ```
 rm -rf node_modules
 npm install 
