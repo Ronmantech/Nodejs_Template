@@ -26,12 +26,6 @@ app.use(function(req, res, next)
   next(err);
 });
 
-// remove
-app.get('/', function(request, response)
-{
-  response.send('Hello World!');
-})
-
 app.listen(PORT, () =>
 {
  console.log(`App on port: ${PORT}`);
