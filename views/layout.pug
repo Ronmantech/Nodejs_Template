@@ -1,1 +1,26 @@
 //- put content here. This is base.
+doctype html(lang='en')
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(http-equiv='x-ua-compatible', content='ie=edge')
+  meta(name='referrer', content='origin')
+  meta(name='description', content="ENTER")
+  meta(name='keywords', content='ENTER')
+  meta(name='author', content='ENTER')
+
+  title ENTER - #{title}
+
+  link(rel='stylesheet', type='text/css', href='ENTER')
+  link(rel="shortcut icon", type="image/x-icon", href='ENTER')
+
+
+  body
+    // load navbar.pug
+    include navbar
+
+    // content block
+    block content
+
+    script(defer='', src='ENTER')
+    script(async='', type='text/javascript', src='ENTER', charset='utf-8')
