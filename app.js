@@ -26,7 +26,6 @@ app.use(function(req, res, next)
   next(err);
 });
 
-app.listen(PORT, () =>
-{
- console.log(`App on port: ${PORT}`);
+app.listen(app.get('port'), function() {
+  console.log("Node app is running at localhost:" + app.get('port'));
 });
