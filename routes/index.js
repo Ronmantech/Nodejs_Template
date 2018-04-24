@@ -1,10 +1,11 @@
 let express = require('express');
 let router = express.Router();
 
-// GET /photo
-router.get('/PUG_FILENAME_HERE', function(req, res, next)
+// GET 
+router.get('/', function(req, res, next)
 {
-  return res.render('PUG file name ', { title: ' TITLE NAME HERE' });
+  return res.write("Hello, World!");
+  // return res.render('PUG file name ', { title: ' TITLE NAME HERE' });
 });
 
 
