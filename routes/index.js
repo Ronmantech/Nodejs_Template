@@ -2,7 +2,7 @@ let express = require('express');
 let router = express.Router();
 
 // GET 
-router.get('/', function(req, res, next)
+router.get('*', function(req, res, next)
 {
   return res.write("Hello, World!");
   // return res.render('PUG file name ', { title: ' TITLE NAME HERE' });
