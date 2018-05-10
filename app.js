@@ -1,9 +1,11 @@
 const express = require('express');
 const helmet = require('helmet');
 const bodyParser = require('body-parser');
+const compression = require('compression');
 const app = express();
 
 app.use(helmet());
+app.use(compression());
 
 app.use(bodyParser.json()); // parse incoming requests
 app.use(bodyParser.urlencoded({ extended: false }));
