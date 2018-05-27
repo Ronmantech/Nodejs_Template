@@ -46,13 +46,11 @@ npm install
 
 If "Node Sass could not find a binding for your current environment" or "throw new Error(errors.missingBinary());" error is encountered. Try either of the following:  
 ```
-rm -rf node_modules
-npm install 
+rm -rf node_modules && npm install
 ```
 or 
 ```
-npm rebuild node-sass
-npm install
+npm rebuild node-sass && npm install
 ```
 
 If
