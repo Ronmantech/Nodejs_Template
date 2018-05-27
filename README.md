@@ -56,11 +56,12 @@ npm install
 ```
 
 If
-``
+```
 gulp[1016]: ../src/node_contextify.cc:631:static void node::contextify::ContextifyScript::New(const FunctionCallbackInfo<v8::Value> &): Assertion `args[1]->IsString()' failed."
 Abort 6
 ```
 error is encountered. Try the following:
+
 ```
 rm -rf node_modules && npm install && npm link gulp 
 ```
