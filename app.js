@@ -7,6 +7,8 @@ const app = express();
 app.use(helmet());
 app.use(compression());
 
+const port = process.env.port || 8080; 
+
 app.use(bodyParser.json()); // parse incoming requests
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -28,6 +30,7 @@ app.use(function(req, res, next)
   next(err);
 });
 
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'));
+app.listen(app.get('port'), () =>
+{
+  console.log(`app is running on http://localhost:${port}`);
 });
