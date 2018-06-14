@@ -1,6 +1,7 @@
 const express = require('express');
 const helmet = require('helmet');
 const bodyParser = require('body-parser');
+const childProc = require('child_process');
 const compression = require('compression');
 const app = express();
 
@@ -33,4 +34,9 @@ app.use(function(req, res, next)
 app.listen(app.get('port'), () =>
 {
   console.log(`app is running on http://localhost:${port}`);
+});
+
+childProc.exec(`open -a "Google Chrome" http://localhost:${port}`, () =>
+{
+ console.log(`Open on: http://localhost:${port}`);
 });
