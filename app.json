@@ -2,7 +2,7 @@
   "name": "Nodejs_Template",
   "description": "A nodejs app template using express.",
   "repository": "https://github.com/Ronmantech/Nodejs_Template",
-  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "logo": "https://cdn.jsdelivr.net/gh/heroku/node-js-getting-started/public/node.svg",
   "keywords": ["node", "express", "pug", "gulp", "mocha", "helmet", "heroku"],
   "image": "heroku/nodejs"
 }
